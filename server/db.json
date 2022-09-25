@@ -1,0 +1,75 @@
+{
+    "navbarData" :  [
+        {
+            "routeLink":"dashboard/home", 
+            "icon": "fal fa-home",
+            "label":"Menú Principal"
+        },
+        
+        {
+            "routeLink":"dashboard/profile", 
+            "icon": "fas fa-user",
+            "label":"Perfil"
+        },
+        
+        {
+            "routeLink":"dashboard/statistics", 
+            "icon": "fal fa-chart-bar",
+            "label":"Estadisticas"
+        },
+        {
+            "routeLink":"dashboard/training-routine", 
+            "icon": "fas fa-dumbbell",
+            "label":"Entrenamientos"
+        },
+        {
+            "routeLink":"dashboard/meal-plans", 
+            "icon": "fas fa-balance-scale-right",
+            "label":"Plan Alimentario"
+        }
+    ],
+
+    "homeCardsData" : [
+        {
+            "title" : "Perfil",
+            "routeLink":"dashboard/profile",
+            "description" : "xxxxxx",
+            "image" : "https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+            
+        },
+        {
+            "title" : "Estadisticas",
+            "routeLink":"dashboard/statistics", 
+            "description" : "Edita, actuliza, mejora tu perfil",
+            "image" : "https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+        },
+        {
+            "title" : "Entrenamientos",
+            "routeLink":"dashboard/training-routine", 
+            "description" : "Edita, actuliza, mejora tu perfil",
+            "image" : "https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+        },
+        {
+            "title" : "Plan Alimentario",
+            "routeLink":"dashboard/meal-plans", 
+            "description" : "Edita, actuliza, mejora tu perfil",
+            "image" : "https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+        }
+    ],
+
+    "trainingRoutineData":[
+        {
+            "id": 1,
+            "name": "Peso muerto"
+        },
+        {
+            "id": 2,
+            "name": "Pesas"
+        },
+        {
+            "id": 4,
+            "name": "Espalda"
+        }
+    ] 
+
+}
