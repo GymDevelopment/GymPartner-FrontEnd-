@@ -14,7 +14,12 @@ import { TrainingRoutineComponent } from './components/dashboard/training-routin
 import { AngularMaterialModule } from './components/shared/angular-material/angular-material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { TrainingInformationComponent } from './components/dashboard/training-information/training-information.component';
-import { MealInformationComponent } from './components/dashboard/meal-information/meal-information.component'
+import { MealInformationComponent } from './components/dashboard/meal-information/meal-information.component';
+import { CoachHomeComponent } from './components/dashboard/coach/coach-home/coach-home.component';
+import { CoachMealPlansComponent } from './components/dashboard/coach/coach-meal-plans/coach-meal-plans.component';
+import { CoachProfileComponent } from './components/dashboard/coach/coach-profile/coach-profile.component';
+import { CoachClientsComponent } from './components/dashboard/coach/coach-clients/coach-clients.component';
+import { CoachTrainingRoutineComponent } from './components/dashboard/coach/coach-training-routine/coach-training-routine.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +31,12 @@ import { MealInformationComponent } from './components/dashboard/meal-informatio
     MealPlansComponent,
     TrainingRoutineComponent,
     TrainingInformationComponent,
-    MealInformationComponent
+    MealInformationComponent,
+    CoachHomeComponent,
+    CoachMealPlansComponent,
+    CoachProfileComponent,
+    CoachClientsComponent,
+    CoachTrainingRoutineComponent
   ],
   imports: [
     BrowserModule,

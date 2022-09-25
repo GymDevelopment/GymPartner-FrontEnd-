@@ -7,6 +7,11 @@ import { StatisticsComponent } from './components/dashboard/statistics/statistic
 import { TrainingRoutineComponent } from './components/dashboard/training-routine/training-routine.component';
 import { TrainingInformationComponent } from './components/dashboard/training-information/training-information.component';
 import { MealInformationComponent } from './components/dashboard/meal-information/meal-information.component';
+import { CoachHomeComponent } from './components/dashboard/coach/coach-home/coach-home.component';
+import { CoachMealPlansComponent } from './components/dashboard/coach/coach-meal-plans/coach-meal-plans.component';
+import { CoachProfileComponent } from './components/dashboard/coach/coach-profile/coach-profile.component';
+import { CoachClientsComponent } from './components/dashboard/coach/coach-clients/coach-clients.component';
+import { CoachTrainingRoutineComponent } from './components/dashboard/coach/coach-training-routine/coach-training-routine.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'dashboard/home', pathMatch: 'full'},
@@ -14,7 +19,12 @@ const routes: Routes = [
   {path: 'dashboard/meal-plans', component: MealPlansComponent},
   {path: 'dashboard/profile', component: ProfileComponent},
   {path: 'dashboard/statistics', component: StatisticsComponent},
-  {path: 'dashboard/training-routine', component: TrainingRoutineComponent},
+  {path: 'dashboard/training-routine',   component: TrainingRoutineComponent},
+  {path: 'dashboard/coach/home',              component: CoachHomeComponent},
+  {path: 'dashboard/coach/meal-plans',        component: CoachMealPlansComponent},
+  {path: 'dashboard/coach/profile',           component: CoachProfileComponent},
+  {path: 'dashboard/coach/clients',        component: CoachClientsComponent},
+  {path: 'dashboard/coach/training-routine',  component: CoachTrainingRoutineComponent},
   {path: 'training-information', component: TrainingInformationComponent},
   {path: 'meal-information', component: MealInformationComponent},
 

@@ -4,7 +4,7 @@
 </h1>
 <div class="home">
   <button *ngFor="let data of cardData" class="button-card" mat-button>
-    <mat-card >
+    <mat-card  routerLink="/{{data.routeLink}}" >
         <mat-card-title-group>
           <mat-card-title>{{data.title}}</mat-card-title>
           <mat-card-subtitle>{{data.description}}</mat-card-subtitle>

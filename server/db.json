@@ -3,29 +3,76 @@
         {
             "routeLink":"dashboard/home", 
             "icon": "fal fa-home",
-            "label":"Menú Principal"
+            "label":"Menú Principal",
+            "type": "client"
         },
         
         {
             "routeLink":"dashboard/profile", 
             "icon": "fas fa-user",
-            "label":"Perfil"
+            "label":"Perfil",
+            "type": "client"
         },
         
         {
             "routeLink":"dashboard/statistics", 
             "icon": "fal fa-chart-bar",
-            "label":"Estadisticas"
+            "label":"Estadisticas",
+            "type": "client"
         },
         {
             "routeLink":"dashboard/training-routine", 
             "icon": "fas fa-dumbbell",
-            "label":"Entrenamientos"
+            "label":"Entrenamientos",
+            "type": "client"
         },
         {
             "routeLink":"dashboard/meal-plans", 
             "icon": "fas fa-balance-scale-right",
-            "label":"Plan Alimentario"
+            "label":"Plan Alimentario",
+            "type": "client"
+        },
+
+
+
+
+
+
+
+
+
+
+        {
+            "routeLink":"dashboard/coach/home", 
+            "icon": "fal fa-home",
+            "label":"Menú Principal",
+            "type": "coach"
+        },
+        
+        {
+            "routeLink":"dashboard/coach/profile", 
+            "icon": "fas fa-user",
+            "label":"Perfil",
+            "type": "coach"
+        },
+        {
+            "routeLink":"dashboard/coach/training-routine", 
+            "icon": "fas fa-dumbbell",
+            "label":"Entrenamientos",
+            "type": "coach"
+        },
+        {
+            "routeLink":"dashboard/coach/meal-plans", 
+            "icon": "fas fa-balance-scale-right",
+            "label":"Plan Alimentario",
+            "type": "coach"
+        },
+        
+        {
+            "routeLink":"dashboard/coach/clients", 
+            "icon": "fal fa-chart-bar",
+            "label":"Clientes",
+            "type": "coach"
         }
     ],
 
