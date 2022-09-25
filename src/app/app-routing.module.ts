@@ -6,6 +6,7 @@ import { ProfileComponent } from './components/dashboard/profile/profile.compone
 import { StatisticsComponent } from './components/dashboard/statistics/statistics.component';
 import { TrainingRoutineComponent } from './components/dashboard/training-routine/training-routine.component';
 import { TrainingInformationComponent } from './components/dashboard/training-information/training-information.component';
+import { MealInformationComponent } from './components/dashboard/meal-information/meal-information.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'dashboard/home', pathMatch: 'full'},
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: 'dashboard/statistics', component: StatisticsComponent},
   {path: 'dashboard/training-routine', component: TrainingRoutineComponent},
   {path: 'training-information', component: TrainingInformationComponent},
+  {path: 'meal-information', component: MealInformationComponent},
 
 ];
 

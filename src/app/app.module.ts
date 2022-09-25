@@ -13,7 +13,8 @@ import { MealPlansComponent } from './components/dashboard/meal-plans/meal-plans
 import { TrainingRoutineComponent } from './components/dashboard/training-routine/training-routine.component';
 import { AngularMaterialModule } from './components/shared/angular-material/angular-material.module';
 import { HttpClientModule } from '@angular/common/http';
-import { TrainingInformationComponent } from './components/dashboard/training-information/training-information.component'
+import { TrainingInformationComponent } from './components/dashboard/training-information/training-information.component';
+import { MealInformationComponent } from './components/dashboard/meal-information/meal-information.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { TrainingInformationComponent } from './components/dashboard/training-in
     StatisticsComponent,
     MealPlansComponent,
     TrainingRoutineComponent,
-    TrainingInformationComponent
+    TrainingInformationComponent,
+    MealInformationComponent
   ],
   imports: [
     BrowserModule,
