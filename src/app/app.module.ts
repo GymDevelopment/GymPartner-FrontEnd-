@@ -19,7 +19,8 @@ import { CoachHomeComponent } from './components/dashboard/coach/coach-home/coac
 import { CoachMealPlansComponent } from './components/dashboard/coach/coach-meal-plans/coach-meal-plans.component';
 import { CoachProfileComponent } from './components/dashboard/coach/coach-profile/coach-profile.component';
 import { CoachClientsComponent } from './components/dashboard/coach/coach-clients/coach-clients.component';
-import { CoachTrainingRoutineComponent } from './components/dashboard/coach/coach-training-routine/coach-training-routine.component'
+import { CoachTrainingRoutineComponent } from './components/dashboard/coach/coach-training-routine/coach-training-routine.component';
+import { CoachMealAddComponent } from './components/dashboard/coach/coach-meal-add/coach-meal-add.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,8 @@ import { CoachTrainingRoutineComponent } from './components/dashboard/coach/coac
     CoachMealPlansComponent,
     CoachProfileComponent,
     CoachClientsComponent,
-    CoachTrainingRoutineComponent
+    CoachTrainingRoutineComponent,
+    CoachMealAddComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,68 @@
-<p>coach-meal-plans works!</p>
+<h1>
+    <strong>Dietas creadas</strong>
+</h1>
+  <mat-form-field appearance="standard">
+    <mat-label>Buscar</mat-label>
+    <input
+      matInput
+      (keyup)="applyFilter($event)"
+      placeholder="Por nombre, calorias, proteinas y tipo"
+      #input
+    />
+  </mat-form-field>
+  
+  <table mat-table 
+  [dataSource]="dataSource"
+   class="mat-elevation-z8">
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef>Id</th>
+      <td mat-cell *matCellDef="let element">{{ element.id }}</td>
+    </ng-container>
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Nombre</th>
+      <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+    </ng-container>
+    <ng-container matColumnDef="calories">
+        <th mat-header-cell *matHeaderCellDef>Calorias</th>
+        <td mat-cell *matCellDef="let element">{{ element.calories }}</td>
+      </ng-container>
+      <ng-container matColumnDef="protein">
+        <th mat-header-cell *matHeaderCellDef>Proteinas</th>
+        <td mat-cell *matCellDef="let element">{{ element.protein }}</td>
+      </ng-container>
+      <ng-container matColumnDef="dietType">
+        <th mat-header-cell *matHeaderCellDef>Tipo de dieta</th>
+        <td mat-cell *matCellDef="let element">{{ element.dietType }}</td>
+      </ng-container>
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Acciones</th>
+      <td mat-cell *matCellDef="let element; let i = index">
+        <a
+          class="pointer"
+          routerLink="/training-information"
+          style="color: #1878b0"
+        >
+          <mat-icon>edit</mat-icon>
+        </a>
+        <a
+        class="pointer"
+        style="color: #e15639"
+        (click)="deleteMeal(element.id)"
+        >
+          <mat-icon>delete</mat-icon>
+        </a>    
+      </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+  <mat-paginator
+    [pageSizeOptions]="[5, 10, 20]"
+    showFirstLastButtons
+    aria-label="Select page of periodic elements"
+  >
+  </mat-paginator>
+  <br>
+  <button mat-raised-button color="warn" routerLink="/meal-add">Nueva dieta</button>
+

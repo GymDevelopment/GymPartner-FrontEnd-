@@ -19,7 +19,6 @@ export class HomeComponent implements OnInit {
   gethomeCardsData(){
     this.homeCardService.gethomeCardData().subscribe((data: HomeCardData[])=>
        { this.cardData = data;
-          console.log(this.cardData);
       }
     )
   }
