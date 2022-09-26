@@ -1,4 +1,9 @@
 
+<div class = "container">
+  <button (click)="changeToCoach()" mat-raised-button [color]="(userType == 'coach')? 'warn' : ''" >  Ver como coach</button>
+  <button (click)="changeToClient()"  mat-raised-button [color]="(userType == 'client')? 'warn' : ''" >  Ver como cliente</button>
+  <button routerLink="/startPage"  mat-raised-button>  Ir al login</button>
+</div>
 <div class="sidenav" [ngClass]="collapsed? 'sidenav-collapsed' : ''">
   <div class="logo-container">
     <button class="logo" (click)="toggleCollapse()" >GP</button>
@@ -9,7 +14,7 @@
   </div>
   <ul class="sidenav-nav">
     <li class="sidenav-nav-item" *ngFor="let data of navData"  >
-        <a *ngIf="data.type == 'coach'" class="sidenav-nav-link"[routerLink]="[data.routeLink]" 
+        <a *ngIf="data.type == userType" class="sidenav-nav-link"[routerLink]="[data.routeLink]" 
           routerLinkActive="active"
           [routerLinkActiveOptions]="{exact: true}"
         >

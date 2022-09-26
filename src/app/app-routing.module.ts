@@ -17,6 +17,7 @@ import { ClientSignInComponent } from './components/starting-screen/client-sign-
 import { ClientSignUpComponent } from './components/starting-screen/client-sign-up/client-sign-up.component';
 import { CoachSignUpComponent } from './components/starting-screen/coach-sign-up/coach-sign-up.component';
 import { CoachSignInComponent } from './components/starting-screen/coach-sign-in/coach-sign-in.component';
+import { StartGymPartnerComponent } from './components/starting-screen/start-gym-partner/start-gym-partner.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'dashboard/home', pathMatch: 'full'},
@@ -37,7 +38,8 @@ const routes: Routes = [
   {path: 'clientsign-up', component: ClientSignUpComponent},
   {path: 'coachsign-up', component: CoachSignUpComponent},
   {path: 'coachsign-in', component: CoachSignInComponent},
-
+  {path: 'startPage', component: StartGymPartnerComponent},
+  
 ];
 
 @NgModule({

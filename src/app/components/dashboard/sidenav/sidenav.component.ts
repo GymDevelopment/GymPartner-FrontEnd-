@@ -46,6 +46,7 @@ export class SidenavComponent implements OnInit {
   collapsed = false;
   screenWidth = 0;
   navData !: NavbarData[];
+  userType:string = 'client';
 
   @HostListener('window.resize', ['$event'])
   onResize(event: any){
@@ -54,6 +55,13 @@ export class SidenavComponent implements OnInit {
       this.collapsed = false;
       this.onToggleSideNav.emit({collapsed: this.collapsed, screenWidth: this.screenWidth});
     }
+  }
+
+  changeToClient(){
+    this.userType = 'client';
+  }
+  changeToCoach(){
+    this.userType = 'coach';
   }
 
   ngOnInit(): void {
