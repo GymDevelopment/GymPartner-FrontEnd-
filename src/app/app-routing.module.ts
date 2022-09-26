@@ -13,6 +13,10 @@ import { CoachProfileComponent } from './components/dashboard/coach/coach-profil
 import { CoachClientsComponent } from './components/dashboard/coach/coach-clients/coach-clients.component';
 import { CoachTrainingRoutineComponent } from './components/dashboard/coach/coach-training-routine/coach-training-routine.component';
 import { CoachMealAddComponent } from './components/dashboard/coach/coach-meal-add/coach-meal-add.component';
+import { ClientSignInComponent } from './components/starting-screen/client-sign-in/client-sign-in.component';
+import { ClientSignUpComponent } from './components/starting-screen/client-sign-up/client-sign-up.component';
+import { CoachSignUpComponent } from './components/starting-screen/coach-sign-up/coach-sign-up.component';
+import { CoachSignInComponent } from './components/starting-screen/coach-sign-in/coach-sign-in.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'dashboard/home', pathMatch: 'full'},
@@ -29,6 +33,10 @@ const routes: Routes = [
   {path: 'training-information', component: TrainingInformationComponent},
   {path: 'meal-information', component: MealInformationComponent},
   {path: 'meal-add', component: CoachMealAddComponent},
+  {path: 'clientsign-in', component: ClientSignInComponent},
+  {path: 'clientsign-up', component: ClientSignUpComponent},
+  {path: 'coachsign-up', component: CoachSignUpComponent},
+  {path: 'coachsign-in', component: CoachSignInComponent},
 
 ];
 

@@ -20,7 +20,13 @@ import { CoachMealPlansComponent } from './components/dashboard/coach/coach-meal
 import { CoachProfileComponent } from './components/dashboard/coach/coach-profile/coach-profile.component';
 import { CoachClientsComponent } from './components/dashboard/coach/coach-clients/coach-clients.component';
 import { CoachTrainingRoutineComponent } from './components/dashboard/coach/coach-training-routine/coach-training-routine.component';
-import { CoachMealAddComponent } from './components/dashboard/coach/coach-meal-add/coach-meal-add.component'
+import { CoachMealAddComponent } from './components/dashboard/coach/coach-meal-add/coach-meal-add.component';
+import { CoachSignInComponent } from './components/starting-screen/coach-sign-in/coach-sign-in.component';
+import { CoachSignUpComponent } from './components/starting-screen/coach-sign-up/coach-sign-up.component';
+import { ClientSignInComponent } from './components/starting-screen/client-sign-in/client-sign-in.component';
+import { ClientSignUpComponent } from './components/starting-screen/client-sign-up/client-sign-up.component';
+import { StartGymPartnerComponent } from './components/starting-screen/start-gym-partner/start-gym-partner.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +44,12 @@ import { CoachMealAddComponent } from './components/dashboard/coach/coach-meal-a
     CoachProfileComponent,
     CoachClientsComponent,
     CoachTrainingRoutineComponent,
-    CoachMealAddComponent
+    CoachMealAddComponent,
+    CoachSignInComponent,
+    CoachSignUpComponent,
+    ClientSignInComponent,
+    ClientSignUpComponent,
+    StartGymPartnerComponent,
   ],
   imports: [
     BrowserModule,
